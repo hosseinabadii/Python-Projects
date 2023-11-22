@@ -1,10 +1,10 @@
-def check_user_input(user_input: int, answer: int) -> bool:
-    user_input = int(user_input)
-    if user_input > answer:
-        print(f"Your input {user_input} is too high!")
+def check_user_input(user_input: str, answer: int) -> bool:
+    number = int(user_input)
+    if number > answer:
+        print("--- Your guess is too high!", end="")
         return False
-    if user_input < answer:
-        print(f"Your input {user_input} is too low!")
+    if number < answer:
+        print("--- Your guess is too low! ", end="")
         return False
 
     return True

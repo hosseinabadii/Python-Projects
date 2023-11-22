@@ -1,8 +1,8 @@
-from utils.number_generator import create_random_number
+import random
 
 
 def start_game(start, end):
-    answer = create_random_number(start, end)
-    score = 100
+    answer = random.randint(start, end)
     print(f"Enter an integer between {start} and {end}:")
-    return answer, score
+
+    return answer
