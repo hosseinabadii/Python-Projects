@@ -6,7 +6,7 @@ from game_logic.input_validator import validator
 from game_logic.input_checker import check_user_input
 
 
-def main(start, end, score):
+def main(start: int, end: int, score: int) -> None:
     print(f"Your initial score is {score}")
     answer = start_game(start, end)
 
@@ -26,6 +26,7 @@ def main(start, end, score):
             if score <= 0:
                 print("\n>>> Game Over <<<")
                 print("Your score is zero.")
+                print(f"The answer was {answer}")
                 print("Thanks for playing!")
                 break
             continue
