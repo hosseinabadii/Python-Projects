@@ -32,9 +32,8 @@ Here's how the project files are organized:
 ## How to Run
 
 1. Navigate to the main project directory (`02 Rock Paper Scissors`).
-2. Add the current directory to the `PYTHONPATH` and run the `main.py` script:
+2. Run the `main.py` script:
 ```bash
-export PYTHONPATH=$PYTHONPATH:$(pwd)
 python src/main.py
 ```
 

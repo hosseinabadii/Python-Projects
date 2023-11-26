@@ -1,7 +1,7 @@
 import os
 import random
 
-from src.options import rock, paper, scissors
+from options import rock, paper, scissors
 
 choices = (1, 2, 3)
 items = {1: rock, 2: paper, 3: scissors}
