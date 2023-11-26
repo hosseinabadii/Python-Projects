@@ -8,7 +8,7 @@ items = {1: rock, 2: paper, 3: scissors}
 winners = {rock: scissors, scissors: paper, paper: rock}
 
 
-def get_user_choice():
+def get_user_choice() -> str:
     """Gets the user's choice."""
     print("*" * 30)
     print("1. Rock\n2. Paper\n3. Scissors \n")
@@ -27,13 +27,13 @@ def get_user_choice():
     return items[user_choice]
 
 
-def get_computer_choice():
+def get_computer_choice() -> str:
     """Gets the computer's choice."""
     computer_choice = random.randint(1, 3)
     return items[computer_choice]
 
 
-def determine_winner(user_choice: str, computer_choice: str):
+def determine_winner(user_choice: str, computer_choice: str) -> str:
     """Determines the winner."""
     if user_choice == computer_choice:
         return "It's a Tie"
@@ -42,7 +42,7 @@ def determine_winner(user_choice: str, computer_choice: str):
     return "Computer Wins!"
 
 
-def play():
+def play() -> None:
     """Plays the game."""
     user_choice = get_user_choice()
     computer_choice = get_computer_choice()
@@ -55,7 +55,7 @@ def play():
     print("-" * len(result_msg))
 
 
-def main():
+def main() -> None:
     os.system("clear")
     print("Welcome to Game!")
 
