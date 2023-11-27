@@ -63,10 +63,10 @@ class MemorablePasswordGenerator(PasswordGenerator):
                 nltk.corpus.words.words()
             )  # edit this to any vocabulary list you want
 
-        self.no_of_words: int = no_of_words
-        self.separator: str = separator
-        self.capitalization: bool = capitalization
-        self.vocabulary: list[str] = vocabulary
+        self.no_of_words = no_of_words
+        self.separator = separator
+        self.capitalization = capitalization
+        self.vocabulary = vocabulary
 
     def generate(self) -> str:
         """Generate a password from a list of vocabulary words."""

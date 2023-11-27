@@ -9,7 +9,7 @@ from password_generators import (
 )
 
 # Title of the application
-st.image("images/banner.jpeg")
+st.image("../images/banner.jpeg")
 st.title(":zap: Password Generator")
 
 col1, col2 = st.columns(2)
